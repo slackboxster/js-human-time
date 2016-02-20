@@ -28,3 +28,13 @@ wrapping it in my DSL.
 
 I used a Javascript library called PEG.js that turns a parser grammar into a parser. Just write up the grammar for your strings,
 and  you can parse anything. ;)
+
+## Live Demo
+[Here](http://ryanheathcote.com/js-human-time/)
+
+## Working with it
+If you want to work with it, for now it's really dumb because I haven't tried to do gulp with file watching -- you have to 
+generate the parser after every change.
+
+* Install peg.js: `$ sudo npm install -g pegjs`
+* Run the generator: `$ pegjs -e "timeParser" time.pegjs peg_time.js`
