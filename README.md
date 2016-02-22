@@ -1,7 +1,6 @@
 # JSTime
 
-This is a different approach to Javascript time than Moment.js. Inspired by Groovy's TimeCategory, this kinda cheats and
-resorts to just parsing strings. BUT the goal is to create a time library that is flexible with a very English-like DSL.
+This is a different approach to Javascript time than [Moment.js](http://momentjs.com/). It is inspired by [Groovy's TimeCategory](http://docs.groovy-lang.org/latest/html/api/groovy/time/TimeCategory.html). However, Javascript makes it hard to do straight properties as methods (at least until ES6), so the closest you can get to the Groovy approach is something like [Date.js](http://www.datejs.com/), which I feel mostly defeats the purpose of not using moment as-is. This library decides to take a bit of a different approach. It's almost cheating, as we just parse strings rather than trying to actually build features into the language. But the goal is to make date manipulation more readable and reliable than current approaches. This library is a start to achieving a domain specific language that is very English-like and very flexible, and I think the string parsing does a much better job at it than anything else.
 
 ## What am I talking about?
 
